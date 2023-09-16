@@ -2,45 +2,61 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+<h1>Job Search Engine</h1>
 
-In the project directory, you can run:
+Screen Shots of Project--
+![Screenshot (36)](https://github.com/sk230144/Job_Search/assets/95127073/11677506-1213-4d54-9bb0-45bb75e8767a)
+![Screenshot (35)](https://github.com/sk230144/Job_Search/assets/95127073/431369ba-ccba-4260-8edb-c237f57fcacc)
+[Screenshot (38)](https://github.com/sk230144/Job_Search/assets/95127073/d4699fd8-73c9-486a-b5e3-22070ba77439)
 
-### `npm start`
+<h1>Description</h1>
+Use react router for routing 
+1. Use redux for state management </br>
+2. UI and functionality : </br>
+○ Add login/signup to your portal with minimal but relevant login details </br>
+○ Use localstorage/sessionstorage to maintain the session for a logged in user </br>
+○ Create a landing page with a single input asking the user what programming language they’re looking for a job in. </br>
+○ Once the user chooses a language, make a request to the Github public API searching for jobs that require developers who know said language. </br>
+○ Show the user a list of jobs with an option to view them in detail. </br>
+○ Once the user selects a job posting, make another request to the API to fetch that particular job. </br>
+○ Add another page to view that particular job and provide an option to apply. </br>
+○ Upon clicking apply, show the user a form asking them for the following: </br>
+■ Name </br>
+■ Email </br>
+■ Cover Letter Note </br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h1>Installation</h1>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npx create-react-app Job-Engine @react-redux-toolkit </br>
+npm start </br>
+Used Data-Json server --  The Data-JSON API Server is a simple and lightweight tool that allows you to create a RESTful API using JSON files as your data source. This project provides an easy way to prototype APIs or serve static JSON data over HTTP. </br>
+json-server --watch data.json --port 8080 </br>
 
-### `npm test`
+Acknowledgments
+We'd like to acknowledge the following open-source projects and APIs that contributed to this project:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+GitHub Jobs API </br>
+Node.js </br>
+React </br>
+Redux </br>
+React-Router-Dom </br>
 
-### `npm run build`
+<h1>Features</h1>
+The Job Search Engine offers the following features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>Search</h2>: Quickly search for job listings based on keywords, job titles, or locations.
+ <h2>Filter</h2> : Use filters to refine your search results by criteria such as location, job type, and date posted.
+ <h2>Job Details</h2> : View detailed information about each job listing, including the job description and application instructions.
+ <h2>Save Searches</h2> : Save your favorite searches for easy access in the future.
+<h2>Responsive Design</h2>: Enjoy a seamless experience on both desktop and mobile devices.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h1>Usage</h1>
+To use the Job Search Engine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open your web browser and navigate to http://localhost:3000 and fetch api with <a> json-server --watch data.json --port 8080  </a>
 
-### `npm run eject`
+Use the search bar to enter keywords, job titles, or locations relevant to your job search.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Explore the search results, and use filters to narrow down your job listings.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Click on a job listing to view more details, including the job description and how to apply.
